@@ -20,6 +20,7 @@ class MashingUpCustomTaxonomy extends MashingUpCustomPostTypesTaxonomyInit {
 			'sort'          => true,
 			'show_in_rest'  => true,
 			'hierarchical'  => true,
+			'show_admin_column' => true,
 		);
 		register_taxonomy( $slug, array( 'speaker' ), $args );
 
