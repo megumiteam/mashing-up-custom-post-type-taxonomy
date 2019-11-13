@@ -39,19 +39,6 @@ class MashingUpCustomTaxonomy extends MashingUpCustomPostTypesTaxonomyInit {
 		);
 		register_taxonomy( $slug, array( 'sponsor' ), $args );
 
-		$label_name   = __( 'セッション種別', $this->domain );
-		$slug         = 'session_type';
-		$args         = array(
-			'label'         => $label_name,
-			'public'        => false,
-			'show_ui'       => true,
-			'show_tagcloud' => false,
-			'sort'          => true,
-			'show_in_rest'  => true,
-			'hierarchical'  => true,
-		);
-		register_taxonomy( $slug, array( 'session' ), $args );
-
 		$label_name   = __( 'Room', $this->domain );
 		$slug         = 'session_room';
 		$args         = array(
